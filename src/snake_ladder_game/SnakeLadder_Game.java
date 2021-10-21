@@ -30,6 +30,13 @@ public class SnakeLadder_Game {
 				System.out.println("Your Position after snake is::" + position);
 				break;
 			}
+			if(position>100) {
+				position=position=die;
+				System.out.println("your position after ladder is ::" + position);
+			}
+			if(position==100) {
+				System.out.println("player won the game");
+			}
 		}
 	}
 
