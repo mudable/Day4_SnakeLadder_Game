@@ -11,6 +11,7 @@ public class SnakeLadder_Game {
 
 		this.position = position;
 		count = 0;
+		// position = 0;
 
 		int rollDice = position();
 		int checkValue = die();
@@ -56,6 +57,7 @@ public class SnakeLadder_Game {
 	static int position() {
 		count++;
 		return (int) (Math.random() * 10) % 6 + 1;
+
 	}
 
 	static int die() {
@@ -66,4 +68,5 @@ public class SnakeLadder_Game {
 		SnakeLadder_Game obj1 = new SnakeLadder_Game();
 		obj1.checkWinner(obj1);
 	}
+
 }
